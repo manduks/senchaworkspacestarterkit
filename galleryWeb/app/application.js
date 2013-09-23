@@ -13,6 +13,6 @@ Ext.define('GalleryWeb.Application', {
     ],
 
     stores: [
-        // TODO: add stores here
+        'GalleryWeb.store.Images'
     ]
 });

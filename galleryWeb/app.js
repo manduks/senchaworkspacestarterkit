@@ -7,6 +7,11 @@
 // DO NOT DELETE - this directive is required for Sencha Cmd packages to work.
 //@require @packageOverrides
 
+// here we are loading the code we are sharing
+Ext.Loader.setPath({
+    'Shared':'../shared'
+});
+
 Ext.application({
     name: 'GalleryWeb',
 

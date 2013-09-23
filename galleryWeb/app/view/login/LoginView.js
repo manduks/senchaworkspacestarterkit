@@ -8,7 +8,8 @@ Ext.define('GalleryWeb.view.login.LoginView', {
     alias: 'widget.loginview',
     requires: [
         'Ext.layout.container.Border',
-        'GalleryWeb.view.login.LoginForm'
+        'GalleryWeb.view.login.LoginForm',
+        'Ext.view.View'
     ],
     layout: 'border',
     defaults:{
@@ -66,14 +67,46 @@ Ext.define('GalleryWeb.view.login.LoginView', {
                 html: 'terms'
             }, {
                 xtype: 'container',
-                html: 'clip'
+                autoScroll:true,
+                items:[
+                	{
+                		xtype:'dataview',
+                		data: [
+					        { src:'http://www.sencha.com/img/20110215-feat-drawing.png', caption:'Drawing & Charts' },
+					        { src:'http://www.sencha.com/img/20110215-feat-data.png', caption:'Advanced Data' },
+					        { src:'http://www.sencha.com/img/20110215-feat-html5.png', caption:'Overhauled Theme' },
+					        { src:'http://www.sencha.com/img/20110215-feat-perf.png', caption:'Performance Tuned' },
+					    	{ src:'http://www.sencha.com/img/20110215-feat-drawing.png', caption:'Drawing & Charts' },
+					        { src:'http://www.sencha.com/img/20110215-feat-data.png', caption:'Advanced Data' },
+					        { src:'http://www.sencha.com/img/20110215-feat-html5.png', caption:'Overhauled Theme' },
+					        { src:'http://www.sencha.com/img/20110215-feat-perf.png', caption:'Performance Tuned' },
+					    	{ src:'http://www.sencha.com/img/20110215-feat-drawing.png', caption:'Drawing & Charts' },
+					        { src:'http://www.sencha.com/img/20110215-feat-data.png', caption:'Advanced Data' },
+					        { src:'http://www.sencha.com/img/20110215-feat-html5.png', caption:'Overhauled Theme' },
+					        { src:'http://www.sencha.com/img/20110215-feat-perf.png', caption:'Performance Tuned' },
+					        { src:'http://www.sencha.com/img/20110215-feat-data.png', caption:'Advanced Data' },
+					        { src:'http://www.sencha.com/img/20110215-feat-html5.png', caption:'Overhauled Theme' },
+					        { src:'http://www.sencha.com/img/20110215-feat-perf.png', caption:'Performance Tuned' },
+					    	{ src:'http://www.sencha.com/img/20110215-feat-drawing.png', caption:'Drawing & Charts' },
+					        { src:'http://www.sencha.com/img/20110215-feat-data.png', caption:'Advanced Data' },
+					        { src:'http://www.sencha.com/img/20110215-feat-html5.png', caption:'Overhauled Theme' },
+					        { src:'http://www.sencha.com/img/20110215-feat-perf.png', caption:'Performance Tuned' }
+					    ],
+                		loadMask:false,
+                		tpl: [
+                			'<tpl for=".">',
+						        '<div style="margin-bottom: 10px;" class="thumb-wrap">',
+						          '<img src="{src}" />',
+						          '<br/><span>{caption}</span>',
+						        '</div>',
+						    '</tpl>'
+                		],
+                		itemSelector: 'div.thumb-wrap',
+    					emptyText: 'No images available',
+                	}
+                ]
             }]
 
-        }, {
-            xtype: 'container',
-            region: 'south',
-            html: 'footer',
-            height: 20
         }];
     }
 });
