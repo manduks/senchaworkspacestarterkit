@@ -1,18 +1,18 @@
 /**
- * @class GalleryWeb.view.login.Login
+ * @class GalleryWeb.view.login.LoginForm
  * @extends Ext.form.Panel
  * The login form
  */
-Ext.define('GalleryWeb.view.login.Login', {
+Ext.define('GalleryWeb.view.login.LoginForm', {
     extend: 'Ext.form.Panel',
-    alias: 'widget.login',
+    alias: 'widget.loginform',
     requires: [
         'Ext.layout.container.Form'
     ],
     layout: 'form',
     defaultType: 'textfield',
     frame: true,
-    title: 'Login',
+    //title: 'Login',
     bodyPadding: '5 5 0',
     width: 270,
     height: 150,

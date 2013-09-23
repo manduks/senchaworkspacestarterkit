@@ -1,8 +1,11 @@
 Ext.define('GalleryWeb.view.Main', {
     extend: 'Ext.container.Container',
     requires: [
-        'GalleryWeb.view.login.Login',
-        'Ext.layout.container.Card'
+        'Ext.layout.container.Card',
+        'GalleryWeb.view.login.LoginView',
+        'GalleryWeb.view.blog.BlogView',
+        'GalleryWeb.view.video.VideoView',
+        'GalleryWeb.view.profile.ProfileView'
     ],
 
     xtype: 'app-main',
@@ -13,17 +16,29 @@ Ext.define('GalleryWeb.view.Main', {
     activeItem: 0,
 
     items: [{
-        xtype: 'container',
+        xtype:'loginview'
+    },{
+        xtype:'panel',
+        itemId:'inMainView',
+        tbar:['->',{
+            text:'blog',
+            step:0
+        },{
+            text:'video',
+            step:1
+        },{
+            text:'profile',
+            step:2
+        }],
         layout: {
-            align: 'middle',
-            pack: 'center',
-            type: 'hbox'
+            type: 'card'
         },
-        items: {
-            xtype: 'login'
-        }
-    }, {
-        xtype: 'container',
-        html: 'container 2'
+        items:[{
+            xtype:'blogview'
+        },{
+            xtype:'videoview'
+        },{
+            xtype:'profileview'
+        }]
     }]
 });
