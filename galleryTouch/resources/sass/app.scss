@@ -2,13 +2,19 @@
 // a new theme, remove them and the add your own CSS on top of the base CSS (which
 // is already included in your app.json file).
 
-//@import 'sencha-touch/default';
-//@import 'sencha-touch/default/all';
-
-@import 'sencha-touch/base';
-@import 'sencha-touch/base/all';
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
 
 // Custom code goes here..
+$actionColor : rgba(43, 73, 94, 0.9);
+$successColor : rgba(0, 192, 158, 0.9);
+$infoColor : rgba(0, 154, 220, 0.9);
+$dangerColor : rgba(254, 57, 49, 0.9);
+$warningColor : rgba(241, 196, 15, 0.9);
+
+
+/* our custom imports */
+@import 'custom/buttons'
 
 // Examples of using the icon mixin:
 // @include icon('user');

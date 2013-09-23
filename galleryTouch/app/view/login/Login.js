@@ -40,6 +40,7 @@ Ext.define('GalleryTouch.view.login.Login', {
             items: [{
                 xtype: 'button',
                 text: 'Login',
+                cls: 'success',
                 scope: this,
                 handler: function (btn) {
                     var form = btn.up('formpanel'),

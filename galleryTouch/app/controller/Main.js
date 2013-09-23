@@ -1,6 +1,5 @@
 Ext.define('GalleryTouch.controller.Main', {
     extend: 'Ext.app.Controller',
-
     config: {
         refs: {
             main: {
