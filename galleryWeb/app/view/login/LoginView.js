@@ -67,7 +67,7 @@ Ext.define('GalleryWeb.view.login.LoginView', {
                 html: 'terms'
             }, {
                 xtype: 'container',
-                autoScroll:true,
+                autoScroll:true, //here to scroll the container
                 items:[
                 	{
                 		xtype:'dataview',

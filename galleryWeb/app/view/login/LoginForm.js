@@ -31,12 +31,16 @@ Ext.define('GalleryWeb.view.login.LoginForm', {
     }],
     buttons: [{
         text: 'Cancel',
+        glyph:'160',
+        iconCls:'icon-music',
         handler: function () {
             this.up('form').getForm().reset();
             // Ext.getCmp
         }
     }, {
         text: 'Login',
+        glyph:'160',
+        iconCls:'icon-music',
         formBind: true, //only enabled once the form is valid
         disabled: true,
         handler: function () {

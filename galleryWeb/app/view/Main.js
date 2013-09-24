@@ -22,12 +22,18 @@ Ext.define('GalleryWeb.view.Main', {
         itemId:'inMainView',
         tbar:['->',{
             text:'blog',
+            glyph:'160',
+            iconCls:'icon-music',
             step:0
         },{
             text:'video',
+            glyph:'160',
+            iconCls:'icon-glass',
             step:1
         },{
             text:'profile',
+            glyph:'160',
+            iconCls:'icon-user',
             step:2
         }],
         layout: {
