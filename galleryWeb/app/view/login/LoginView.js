@@ -13,7 +13,7 @@ Ext.define('GalleryWeb.view.login.LoginView', {
     ],
     layout: 'border',
     defaults:{
-    	padding:'0px 5px 5px 5px',
+    	padding:'0px 5px 5px 5px'
     },
     initComponent: function (argument) {
         var me = this;
@@ -102,7 +102,7 @@ Ext.define('GalleryWeb.view.login.LoginView', {
 						    '</tpl>'
                 		],
                 		itemSelector: 'div.thumb-wrap',
-    					emptyText: 'No images available',
+    					emptyText: 'No images available'
                 	}
                 ]
             }]

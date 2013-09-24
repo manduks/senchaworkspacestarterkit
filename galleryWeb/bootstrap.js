@@ -7,6 +7,7 @@
 Ext.Loader.addClassPathMappings({
   "GalleryWeb.Application": "app/application.js",
   " Ext.Msg": "../ext/src/window/MessageBox.js",
+  "Shared": "../shared",
   "Ext": "../ext/src",
   "Ext.rtl.EventObjectImpl": "../ext/src/rtl/EventObject.js",
   "GalleryWeb": "app"
@@ -26,7 +27,9 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.dd.PanelFieldDragZone": [],
   "Ext.ux.DataView.DragSelector": [],
   "Ext.ux.grid.menu.ListMenu": [],
+  "Shared.models.Image": [],
   "Ext.ux.GMapPanel": [],
+  "GalleryWeb.store.Images": [],
   "Ext.ux.form.MultiSelect": [
     "Ext.ux.Multiselect"
   ],
@@ -36,6 +39,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.statusbar.ValidationStatus": [],
   "Ext.ux.layout.Center": [],
   "Ext.ux.PreviewPlugin": [],
+  "GalleryWeb.view.login.LoginView": [],
   "Ext.ux.DataView.Animated": [],
   "Ext.ux.ajax.SimXhr": [],
   "Ext.ux.event.RecorderManager": [],
@@ -55,9 +59,13 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.event.Player": [],
   "Ext.ux.ajax.SimManager": [],
   "Ext.ux.grid.filter.BooleanFilter": [],
+  "GalleryWeb.view.profile.ProfileView": [],
   "Ext.ux.ToolbarDroppable": [],
+  "GalleryWeb.view.login.LoginForm": [],
+  "GalleryWeb.view.blog.BlogView": [],
   "Ext.ux.event.Maker": [],
   "Ext.ux.TabScrollerMenu": [],
+  "GalleryWeb.view.video.VideoView": [],
   "GalleryWeb.view.Main": [],
   "Ext.ux.IFrame": [],
   "Ext.ux.DataView.Draggable": [],
@@ -100,9 +108,11 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.dd.PanelFieldDragZone": [],
   "Ext.ux.DataView.DragSelector": [],
   "Ext.ux.grid.menu.ListMenu": [],
+  "Shared.models.Image": [],
   "Ext.ux.GMapPanel": [
     "widget.gmappanel"
   ],
+  "GalleryWeb.store.Images": [],
   "Ext.ux.form.MultiSelect": [
     "widget.multiselect",
     "widget.multiselectfield"
@@ -120,6 +130,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "Ext.ux.PreviewPlugin": [
     "plugin.preview"
+  ],
+  "GalleryWeb.view.login.LoginView": [
+    "widget.loginview"
   ],
   "Ext.ux.DataView.Animated": [],
   "Ext.ux.ajax.SimXhr": [],
@@ -150,10 +163,22 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.grid.filter.BooleanFilter": [
     "gridfilter.boolean"
   ],
+  "GalleryWeb.view.profile.ProfileView": [
+    "widget.profileview"
+  ],
   "Ext.ux.ToolbarDroppable": [],
+  "GalleryWeb.view.login.LoginForm": [
+    "widget.loginform"
+  ],
+  "GalleryWeb.view.blog.BlogView": [
+    "widget.blogview"
+  ],
   "Ext.ux.event.Maker": [],
   "Ext.ux.TabScrollerMenu": [
     "plugin.tabscrollermenu"
+  ],
+  "GalleryWeb.view.video.VideoView": [
+    "widget.videoview"
   ],
   "GalleryWeb.view.Main": [
     "widget.app-main"
